@@ -1,0 +1,15 @@
+Mode: built-in image_gen. One request per sprite, no retries.
+
+planet-base.png
+Use case: stylized-concept
+Asset type: transparent PNG game sprite, square canvas.
+Primary request: cute child-friendly science fiction planetary defense turret BASE ONLY, without any barrel. Front view, broad curved blue-teal small planet dome fills the bottom two-thirds, rounded armored navy and mint turret pedestal centered atop the planet. Circular mechanical pivot centered at precisely x50%, y25% of whole square canvas, for a separate rotating cannon sprite to attach. Planet dome broad, bottom cropped by canvas. Polished soft 3D game illustration, smooth chunky rounded shapes, crisp readable silhouette, turquoise trim, gentle highlights.
+Scene/backdrop: genuinely transparent background with alpha outside subject, no solid background and no checkerboard painted into image.
+Constraints: square composition, no cannon barrel, no faces, no text, no letters, no watermark, no stars or separate objects. Pedestal and planet only.
+
+turret-barrel.png
+Use case: stylized-concept
+Asset type: standalone transparent PNG sprite for a rotating game cannon, square canvas.
+Primary request: one upward-pointing vertical navy and teal science-fiction laser cannon barrel only. Cute child-friendly polished soft 3D game art with chunky rounded shapes, smooth armored navy metal, mint and teal trim, turquoise glowing muzzle tip. Frontal view, perfectly vertical and horizontally centered. Round small mechanical hub centered EXACTLY at (50%,50%) of the square canvas is the rotation pivot. Barrel extends from this center hub UP to near (50%,5%). Entire lower half of canvas must be empty transparent except the small lower portion of the round hub. Narrow silhouette occupies about 20% of canvas width; large transparent margins left/right. Muzzle points straight upward toward top of canvas.
+Scene/backdrop: genuinely transparent alpha background; do not paint checkerboard or colored background.
+Constraints: ONLY barrel with central hub, no turret base, no pedestal, no planet, no floor, no projectile, no faces, no text, no watermark. Keep hub at exact canvas center, not at bottom.

@@ -1,0 +1,46 @@
+/* Illustrated meteor; the symbol stays upright while each rock has its own angle. */
+.meteor,
+.meteor.urgent {
+  width: 96px;
+  height: 96px;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  isolation: isolate;
+  pointer-events: none;
+}
+.meteor-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 5px #0008);
+  user-select: none;
+}
+.meteor-symbol {
+  position: relative;
+  z-index: 1;
+  color: #fffdf2;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 0 2px 3px #160c09, 1px 0 3px #160c09, -1px 0 3px #160c09;
+}
+.meteor.urgent .meteor-art {
+  filter: drop-shadow(0 0 7px #ff9a50) drop-shadow(0 3px 5px #0008);
+}
+@media (max-width: 620px) {
+  .meteor-symbol { font-size: 36px; }
+}
+.ground { height: 180px; border-bottom: 5px solid #82e7cb; }
+.ground .planet-base { position:absolute; width:180px; height:180px; left:calc(50% - 90px); bottom:-20px; pointer-events:none; }
+.ground .turret-barrel { position:absolute; width:120px; height:120px; left:calc(50% - 60px); bottom:52.6px; transform-origin:50% 48%; pointer-events:none; }
+.ground .defense-label { position:absolute; bottom:0; left:14px; font-size:11px; padding:5px; }
+#effects { position:absolute; inset:0; pointer-events:none; z-index:3; overflow:hidden; }
+.laser { position:absolute; height:5px; border-radius:5px; background:#f5fffb; box-shadow:0 0 7px 3px #7affdd,0 0 18px #49bfff; transform-origin:0 50%; }
+.shot-flash { position:absolute; width:22px; height:22px; margin:-11px; border-radius:50%; background:#fffbd9; box-shadow:0 0 16px 6px #92ffdf; }
+.impact-ring { position:absolute; width:20px; height:20px; margin:-10px; border:3px solid #ffe29d; border-radius:50%; box-shadow:0 0 12px #ffb34b,inset 0 0 9px #ffb34b; }
+.impact-spark { position:absolute; width:7px; height:7px; margin:-3.5px; border-radius:50%; background:#ffd783; box-shadow:0 0 8px #ff914f; }
+.feedback { bottom:185px; }
